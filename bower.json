@@ -1,0 +1,27 @@
+{
+  "name": "blogroll",
+  "version": "0.1.0",
+  "homepage": "https://github.com/acburdine/blogroll",
+  "authors": [
+    "Austin Burdine <acburdine@gmail.com>"
+  ],
+  "description": "a simple bootstrap blogroll",
+  "keywords": [
+    "bootstrap",
+    "php",
+    "blogroll",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
