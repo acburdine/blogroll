@@ -22,11 +22,11 @@ $counter = 0;
 
         <div class="row">
 
-            <? foreach($blogs->blogs as $link => $alt) : ?>
+            <?php foreach($blogs->blogs as $link => $alt) : ?>
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="blog-link-<?=$counter?>" data-href="<?=$link?>" style="cursor:pointer">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><? if ($alt) : ?><?=$alt?><? else: ?>Blog<? endif; ?></div>
+                    <div class="panel-heading"><?php if ($alt) : ?><?=$alt?><?php else: ?>Blog<?php endif; ?></div>
                     <div class="panel-body">
                         <div href="<?=$link?>" class="embed-responsive embed-responsive-4by3" target="_blank">
                             <iframe src="<?=$link?>" class="embed-responsive-item" style="overflow:hidden"></iframe>
@@ -35,7 +35,7 @@ $counter = 0;
                 </div>
             </div>
 
-            <?
+            <?php
                 $counter++;
                 endforeach;
             ?>
