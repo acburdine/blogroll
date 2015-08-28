@@ -1,0 +1,9 @@
+{
+  "name": "Blogroll",
+  "description": "A basic blogroll",
+  "blogs": [
+    "http://blog.acburdine.me",
+    "http://tech.acburdine.me",
+    "http://christianscout.wordpress.com"
+  ]
+}
