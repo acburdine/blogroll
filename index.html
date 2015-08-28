@@ -38,7 +38,7 @@
             $.getJSON('bloglist.json', function (data) {
                 var count = 0;
 
-                $('#blogroll-title').html(data.name).append($('small').html(data.description));
+                $('#blogroll-title').html(data.name + '&nbsp;').append($('<small>').html(data.description));
 
                 document.title = data.name;
 
