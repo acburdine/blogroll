@@ -8,7 +8,7 @@ A simple, one-page blogroll written with [jQuery](http://jquery.com) and [Bootst
 
 #### Quick Install (from zip)
 
-1. Download the latest release zip from [https://github.com/acburdine/blogroll/releases](here)
+1. Download the latest release zip from [here](https://github.com/acburdine/blogroll/releases)
 2. Unzip the file into your web directory
 3. Enjoy!
 
