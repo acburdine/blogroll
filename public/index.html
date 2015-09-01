@@ -5,6 +5,12 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/vendor/font-awesome/css/font-awesome.min.css" />
+
+    <style type="text/css">
+        span.js-blog-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,9 +24,9 @@
 
     </div>
     <script type="text/template" id="item-template">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="blog-link-{{count}}" data-href="{{link}}" style="cursor:pointer">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="cursor:pointer">
             <div class="panel panel-default">
-                <div class="panel-heading">{{description}}</div>
+                <div class="panel-heading"><span class="js-blog-link" data-href="{{link}}" >{{description}}</span></div>
                 <div class="panel-body">
                     <div href="{{link}}" class="embed-responsive embed-responsive-4by3" target="_blank">
                         <iframe src="{{link}}" class="embed-responsive-item" style="overflow:hidden"></iframe>
@@ -54,7 +60,16 @@
                 });
             });
 
-            $('#blogroll-list').on('click', 'div[id*=blog-link]', function () {
+            $('#blogroll-list').on('click', 'div[class*=col-]', function (event) {
+                $(this).prependTo('#blogroll-list');
+
+                if (event.target.nodeName.toLowerCase() !== 'span') {
+                    $(this).attr('class', ($(this).data('opened') === 'true') ? 'col-lg-3 col-md-4 col-sm-6 col-xs-12' : 'col-lg-12');
+                    $(this).data('opened', ($(this).data('opened') === 'true') ? 'false' : 'true');
+                }
+            });
+
+            $('#blogroll-list').on('click', 'span.js-blog-link', function () {
                 var href = $(this).data('href');
 
                 window.open(href);
