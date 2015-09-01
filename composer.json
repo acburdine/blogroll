@@ -1,0 +1,12 @@
+{
+    "name": "acburdine/blogroll",
+    "require": {
+        "slim/slim": "^2.0.0"
+    },
+    "authors": [
+        {
+            "name": "Austin Burdine",
+            "email": "acburdine@gmail.com"
+        }
+    ]
+}
