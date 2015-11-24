@@ -1,0 +1,22 @@
+{
+  "name": "blogroll",
+  "version": "0.3.0",
+  "description": "A simple, one-page blogroll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acburdine/blogroll.git"
+  },
+  "author": "Austin Burdine <acburdine@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acburdine/blogroll/issues"
+  },
+  "homepage": "https://github.com/acburdine/blogroll#readme",
+  "dependencies": {
+    "webshot": "^0.16.0"
+  }
+}
